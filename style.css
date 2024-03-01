@@ -5,7 +5,7 @@
     border: 0;
 }
     body{
-        background-color: rgb(255, 202, 255);
+        background-color: rgb(255, 127, 127);
         color: white;
     }
     header {
@@ -28,4 +28,15 @@ header div a:hover {
     color: rgb(255, 66, 66);
     transition: color 700ms;
         
+}
+
+#box {
+    text-align: center;
+    padding: 32px;
+}
+
+#box img {
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-bottom: 32px;
 }

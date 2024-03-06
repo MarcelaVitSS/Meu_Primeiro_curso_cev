@@ -1,17 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    --subcolor: rgb(255, 0, 21);
+}
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
 }
     body{
-        background-color: rgb(255, 127, 127);
+        background-color: rgb(243, 88, 88);
         color: white;
     }
     header {
         padding: 32px;
         border-bottom: 2px solid rgba(0, 0, 0, 0.459);
-        background-color: rgb(255, 178, 178);
+        background-color: rgb(254, 66, 66);
+    }
+    .links {
+        text-align: center;
+    }
+    .links a{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 16px;
+        text-decoration: none;
+    }
+    .links a:hover{
+        color: var(--subcolor);
+        transition: 700ms;
+        font-size: 23px;
     }
     header div {
         text-align: center;
@@ -29,14 +49,42 @@ header div a:hover {
     transition: color 700ms;
         
 }
-
 #box {
     text-align: center;
     padding: 32px;
 }
 
-#box img {
+#box img:hover {
     border-radius: 50%;
-    border: 5px solid black;
+    border: 5px solid var(--subcolor);
     margin-bottom: 32px;
+    transition: 800ms;
+}
+#box h1 {
+    font-size: 24px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#box h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#box p{
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+#linksFooter{
+    padding: 32px;
+}
+#linksFooter a {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-bottom: 3 px solid var(--subcolor);
 }
